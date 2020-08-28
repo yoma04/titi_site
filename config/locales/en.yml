@@ -1,0 +1,19 @@
+en:
+  activerecord:
+    models:
+      contact: お問い合わせ
+    attributes:
+      contact:
+        name: お名前
+        kana: カナ
+        post: 郵便番号
+        address: ご依頼先住所
+        tel: お電話番号
+        email: メールアドレス
+        parking: 駐車場の有無
+        content: お問い合わせ内容
+
+  errors: &errors
+    format: ! '%{attribute}%{message}'
+    messages:
+      blank: を入力してください。

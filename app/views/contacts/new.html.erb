@@ -1,0 +1,154 @@
+<!--CSSの読み込み-->
+<%= stylesheet_link_tag "contact", :media => "all" %>
+<!--meta_tagの各タイトル設定-->
+<%set_meta_tags title:"お問い合わせ"%>
+
+<div class="pc-1">
+<div class="contactForm">
+<div class="formstart">
+<h1>お問い合わせはこちらから。</h1>
+</div>
+
+<% if @contact.errors.any? %>
+  <div class="alert alert-warning">
+    <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @contact do |f| %>
+  <ul class="contactLists">
+    <li class="name">
+      <%= f.label :name, 'お名前' %>
+      <%= f.text_field :name %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :kana, 'カナ' %>
+      <%= f.text_field :kana %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :post, '郵便番号' %>
+      <%= f.text_field :post %>
+    </li>
+    <li class="name">
+      <%= f.label :address, 'ご依頼先住所' %>
+      <%= f.text_field :address %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :tel, 'お電話番号' %>
+      <%= f.text_field :tel %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :email, 'メールアドレス' %>
+      <%= f.email_field :email %>
+    </li>
+    <li class="name">
+      <%= f.label :parking, '駐車場の有無' %>
+      <%= f.radio_button :parking, :true %>
+      <%= f.label :parking, "あり", {value: :true, style: "display: inline-block;"} %>
+      <%= f.radio_button :parking, :false %>
+      <%= f.label :parking, "なし", {value: :false, style: "display: inline-block;"} %>
+      <span class="must-1">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :content, 'お問い合わせ内容', class: "foo"%>
+      <%= f.text_area :content,size: "20x8"%>
+    </li>
+  </ul>
+  <p class="messeage">上記内容をご確認の後、送信ボタンをクリックしてください。</p>
+  <p class="btn"><%= f.submit '送信', class: "btn"%></p>
+<% end %>
+<!---->
+<div class="Contactbox">
+<dl>
+  <dt>お電話でのお問い合わせはこちらから</dt>
+  <dd>
+    <p class="telRow">  <%= image_tag "tell.jpg", alt: "Rails icon", id: "assets", class: "image" %><span>072-432-2212</span></p>
+    <p class="time">受付時間：AM0:00〜PM23:59(祝日を除く)</p>
+  </dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div class="tablet-1">
+<div class="contactForm">
+<div class="formstart">
+<h1>お問い合わせはこちらから。</h1>
+</div>
+
+<% if @contact.errors.any? %>
+  <div class="alert alert-warning">
+    <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @contact do |f| %>
+  <ul class="contactLists">
+    <li class="name">
+      <%= f.label :name, 'お名前' %>
+      <%= f.text_field :name %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :kana, 'カナ' %>
+      <%= f.text_field :kana %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :post, '郵便番号' %>
+      <%= f.text_field :post %>
+    </li>
+    <li class="name">
+      <%= f.label :address, 'ご依頼先住所' %>
+      <%= f.text_field :address %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :tel, 'お電話番号' %>
+      <%= f.text_field :tel %>
+      <span class="must">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :email, 'メールアドレス' %>
+      <%= f.email_field :email %>
+    </li>
+    <li class="name">
+      <%= f.label :parking, '駐車場の有無' %>
+      <%= f.radio_button :parking, :true %>
+      <%= f.label :parking, "あり", {value: :true, style: "display: inline-block;"} %>
+      <%= f.radio_button :parking, :false %>
+      <%= f.label :parking, "なし", {value: :false, style: "display: inline-block;"} %>
+      <span class="must-1">※必須</span>
+    </li>
+    <li class="name">
+      <%= f.label :content, 'お問い合わせ内容', class: "foo"%>
+      <%= f.text_area :content,size: "10x5"%>
+    </li>
+  </ul>
+  <p class="messeage">上記内容をご確認の後、送信ボタンをクリックしてください。</p>
+  <p class="btn"><%= f.submit '送信', class: "btn"%></p>
+<% end %>
+<!---->
+<div class="Contactbox">
+<dl>
+  <dt>お電話でのお問い合わせはこちらから</dt>
+  <dd>
+    <p class="telRow">  <%= image_tag "tell.jpg", alt: "Rails icon", id: "assets", class: "image" %><span>072-432-2212</span></p>
+    <p class="time">受付時間：AM0:00〜PM23:59(祝日を除く)</p>
+  </dd>
+</dl>
+</div>
+</div>
+</div>

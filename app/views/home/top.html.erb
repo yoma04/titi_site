@@ -1,0 +1,38 @@
+<!--CSSの読み込み-->
+<%= stylesheet_link_tag "home", :media => "all" %>
+<!--meta_tagの各タイトル設定-->
+<%set_meta_tags title:"トップページ"%>
+
+<section class="section1">
+<div class="move">
+<%= link_to image_tag('p1.jpg'), '#' ,class:"photo"%>
+<%= link_to image_tag('p2.jpg'), '#' ,class:"photo"%>
+<%= link_to image_tag('p3.jpg'), '#' ,class:"photo"%>
+</div>
+</section>
+<div class="container">
+
+    <section class="section2">
+        <h2>サービス</h2>
+        <div class="wide">
+        <div class="service-menu">
+            <%= link_to image_tag('view.jpeg'), '#' %>
+        </div>
+        </div>
+        <div class="wide">
+        <div class="service-menu">
+            <%= link_to image_tag('view2.jpg'), '#' %>
+        </div>
+        </div>
+        <div class="wide">
+        <div class="service-menu">
+            <%= link_to image_tag('view.jpeg'), '#' %>
+        </div>
+        </div>
+        <div class="wide">
+        <div class="service-menu">
+            <%= link_to image_tag('view2.jpg'), '#' %>
+        </div>
+        </div>
+    </section>
+    </div>

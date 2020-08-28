@@ -1,0 +1,226 @@
+@media only screen and (max-width: 768px){
+  .pc-1{
+    display: none;
+  }
+  .contactForm{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 750px;
+  }
+  .formstart{
+    font-size: 10px;
+    background-color: #cfcfcf;
+    border-top: 2px solid #888;
+    border-bottom: 2px dashed #888;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .formstart h1{
+    margin: 10px 0;
+    font-size: 17px;
+    color:#555;
+  }
+  .contactLists{
+    padding: 0;
+    padding-left: 30px;
+  }
+  .contactLists li{
+    display: table-row;
+  }
+  label{
+    margin-right: 20px;
+    width: 110px;
+    text-align: left;
+    display: table-cell;
+    font-size: 13px;
+  }
+  .contact label{
+    vertical-align: middle;
+  }
+  #contact_kana,#contact_name,#contact_post,#contact_address,#contact_tel,#contact_email,#contact_content{
+    width: 400px;
+    margin: 15px 0;
+  }
+  .foo{
+    vertical-align: middle;
+  }
+  .must{
+    background-color: #d81b60;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.7em;
+  }
+  .must-1{
+    background-color: #d81b60;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.7em;
+    margin-left:110px;
+  }
+  .messeage{
+    text-align: center;
+    }
+    .btn{
+      text-align: center;
+      margin: 10px;
+    }
+    #button{
+      padding: 10px 5em;
+      color:white;
+      background-color:#d81b60;
+      border: none;
+      font-weight: 600;
+    }
+    .Contactbox{
+      margin-top: 60px;
+    }
+    .Contactbox dt{
+      background-color: #f8bbd0;
+      text-align: center;
+      padding: 5px 0;
+      color: white;
+      margin: 0 auto;
+      width: 700px;
+    }
+    .Contactbox dd .telRow{
+      text-align: center;
+      font-size: 1rem;
+      padding:0 10px;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .Contactbox dd .telRow span{
+      color:#d81b60;
+      font-size: 2rem;
+      font-weight: 200;
+      padding-left: 10px;
+    }
+    .time{
+      text-align: center;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .Contactbox dd{
+      border: 2px solid #f8bbd0;
+      margin: 0 auto;
+      width: 695px;
+    }
+
+}
+@media only screen and (min-width: 769px){
+.contactForm{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 180px;
+  }
+  .formstart{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-top: 3px;
+    border-bottom: 3px dashed #888;
+  }
+  .formstart h1{
+    margin: 0;
+    border-top: 3px solid #888;
+    background-color: #cfcfcf;
+    padding: 18px 0;
+    font-weight: 600;
+    letter-spacing:-2px;
+    color:#555;
+    font-size: 20px;
+  }
+  .contactLists{
+    padding: 0;
+    padding-left: 100px;
+  }
+  .contactLists li{
+    display: table-row;
+  }
+  label{
+    margin-right: 20px;
+    width: 200px;
+    text-align: left;
+    display: table-cell;
+    
+  }
+  .foo{
+    vertical-align: middle;
+  }
+  .contact label{
+    vertical-align: middle;
+  }
+  #contact_kana,#contact_name,#contact_post,#contact_address,#contact_tel,#contact_email,#contact_content{
+    width: 600px;
+    margin: 15px 0;
+  }
+
+  #choice{
+    display: inline;
+  }
+  .must{
+    background-color: #d81b60;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.7em;
+  }
+  .must-1{
+    background-color: #d81b60;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 0.7em;
+    margin-left:123px;
+  }
+  .messeage{
+  text-align: center;
+  }
+  .btn{
+    text-align: center;
+    margin: 20px;
+  }
+  .Contactbox{
+    margin-top: 60px;
+  }
+  #sex{
+    margin-left: 150px;
+  }
+  .Contactbox dt{
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    margin: 0 auto;
+  }
+  .Contactbox dd{
+    border: 2px solid #f8bbd0;
+    margin: 0;
+  }
+  .Contactbox dd .telRow{
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .mark{
+    position: relative;
+    top:5px;
+  }
+  .Contactbox dd .telRow span{
+    color:#d81b60;
+    font-size: 3rem;
+    font-weight: 200;
+    padding-left: 10px;
+  }
+  .time{
+    text-align: center;
+  }
+  .tablet-1{
+    display: none;
+  }
+}
+
+.field_with_errors {
+  display: inline-block;
+}

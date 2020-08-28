@@ -1,0 +1,117 @@
+    <!--CSSの読み込み-->
+    <%= stylesheet_link_tag "service", :media => "all" %>
+    <!--meta_tagの各タイトル設定-->
+    <%set_meta_tags title:"サービス"%>
+    <div class="container">
+    <div class="serviceTitle">
+    <h1>サービス一覧</h1>
+    </div>
+    <div class="serviceContent">
+    <!--section2-->
+    <section class="section1">
+    <div class="Contentbox">
+    <div class="contentTop">
+    <div class="ContentTitle">
+        <h2>ハウスクリーニング</h2>
+    </div>
+    <div class="contentbtn">
+    <%= link_to "#" do %>
+        <i class="fas fa-angle-right"></i>一覧を見る
+        <%end%>
+    </div>
+    </div>
+    <div class="contentTxt">
+    <h3>プロのお掃除技術でお部屋をスッキリへ!!</h3>
+    <p>職人の技術と専門知識でお部屋を綺麗にするプロフェッショナルサービスです。
+    普段ご自身でできないような部分をプロフェッショナルが隅々まで綺麗にします。</p>
+    </div>
+    <div class="content">
+        <ul>
+
+
+            <li><div class="service">
+            <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>床クリーニング</h4>
+                <% end %></div></li>
+
+                <li><div class="service">
+                <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>水回り</h4>
+                <% end %></div></li>
+
+                <li><div class="service">
+                <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>TV掃除</h4>
+                <% end %></div></li>
+
+                <li><div class="service">
+                <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>エアコンクリーニング</h4>
+                <% end %></div></li>
+        </ul>
+    </div>
+    </div>
+    </section>
+    <!--section2-->
+
+    <section class="section2">
+    <div class="Contentbox">
+    <div class="contentTop">
+    <div class="ContentTitle">
+        <h2>ビルクリーニング</h2>
+    </div>
+    <div class="contentbtn">
+    <%= link_to "#" do %>
+        <i class="fas fa-angle-right"></i>一覧を見る
+        <%end%>
+    </div>
+    </div>
+    <div class="contentTxt">
+    <h3>プロのお掃除技術でお部屋をスッキリへ!!</h3>
+    <p>職人の技術と専門知識でお部屋を綺麗にするプロフェッショナルサービスです。
+    普段ご自身でできないような部分をプロフェッショナルが隅々まで綺麗にします。</p>
+    </div>
+    <div class="content">
+        <ul>
+
+            <li><div class="service">
+            <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>床クリーニング</h4>
+                <% end %></div></li>
+
+                <li><div class="service">
+                <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>水回り</h4>
+                <% end %></div></li>
+
+                <li><div class="service">
+                <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>TV掃除</h4>
+                <% end %></div></li>
+
+                <li><div class="service">
+                <%= link_to "#", class: 'hoge' do %>
+                <div>
+                    <%= image_tag("housecleaning.jpg")%>
+                </div><h4><i class="fas fa-angle-right"></i>エアコンクリーニング</h4>
+                <% end %></div></li>
+        </ul>
+    </div>
+    </div>
+    </section>
+    </div>
+</body>

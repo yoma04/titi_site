@@ -1,0 +1,108 @@
+
+  /*service*/
+  .container{
+    padding-top: 180px;
+  }
+  section{
+    margin: 50px 0;
+  }
+  .serviceTitle{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 13px;
+    border-bottom: 3px dashed #888;
+  }
+  .serviceTitle h1{
+    margin: 0;
+    border-top: 3px solid #888;
+    letter-spacing:-2px;
+    font-weight: 600;
+    color: #555;
+    background-color: #cfcfcf;
+    padding: 18px 0;
+    font-size: 20px;
+  }
+  /*section1*/
+.Contentbox{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border:1px solid #dbdbdb;
+    padding: 20px 40px;
+    position: relative;
+}
+.serviceContent h2{
+  border-bottom: #dbdbdb;
+}
+.contentbtn{
+  position: absolute;
+  top: 35px;
+  right: 70px;
+}
+.contentbox i{
+  margin-right: 5px;
+}
+.contentbtn a{
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  background-color: #d81b60;
+  border-radius: 15px;
+  width: 95px;
+}
+.contentbtn a:hover{
+  opacity: 0.5;
+}
+.contentTxt{
+  border-top: 1px solid #dbdbdb;
+  margin: 20px;
+}
+.contentTxt p{
+  word-wrap: normal;
+  width: 69%;
+  line-height: 50px;
+}
+.contentTxt img {
+  position: absolute;
+  top:100px;
+  right: 80px;
+}
+/*list*/
+.content{
+  margin-top: 40px;
+  text-align: center;
+}
+.content ul{
+	display: flex;
+	flex-wrap:wrap;
+}
+.content li{
+  width: calc(100%/2);/*←画像を横に4つ並べる場合*/
+	padding: 0 35px 20px 0;/*←画像の左右に5pxの余白を入れる場合*/
+  box-sizing:border-box;
+  display: inline-block;
+}
+.content li a{
+  color: #444;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content li img{
+  max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+}
+.content li a:hover{
+  opacity: 0.5;
+}
+.content i{
+  margin-right: 10px;
+}
+h4{
+  display: inline-block;
+  margin-top: 10px 0;
+}
