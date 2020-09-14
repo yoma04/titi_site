@@ -51,6 +51,7 @@
   background-color: #d81b60;
   border-radius: 15px;
   width: 95px;
+  font-size:14px;
 }
 .contentbtn a:hover{
   opacity: 0.5;
@@ -60,9 +61,16 @@
   margin: 20px;
 }
 .contentTxt p{
-  word-wrap: normal;
+  word-wrap: break-word;
   width: 69%;
   line-height: 50px;
+  font-size: 15px;
+}
+.Recommended{
+  margin: 0;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
 }
 .contentTxt img {
   position: absolute;
